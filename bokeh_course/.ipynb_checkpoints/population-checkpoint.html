@@ -1,0 +1,85 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    
+      <meta charset="utf-8">
+      <title>Bokeh Plot</title>
+      
+      
+        
+          
+        
+        
+          
+        <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-2.3.2.min.js" integrity="sha384-XypntL49z55iwGVUW4qsEu83zKL3XEcz0MjuGOQ9SlaaQ68X/g+k1FcioZi7oQAc" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            Bokeh.set_log_level("info");
+        </script>
+        
+      
+      
+    
+  </head>
+  
+  
+  <body>
+    
+      
+        
+          
+          
+            
+              <div class="bk-root" id="08157524-f13c-4f82-a89d-47c2ff4df599" data-root-id="1283"></div>
+            
+          
+        
+      
+      
+        <script type="application/json" id="1421">
+          {"993969cb-c7e6-470a-ad75-99f1153049dc":{"defs":[],"roots":{"references":[{"attributes":{},"id":"1302","type":"PanTool"},{"attributes":{},"id":"1305","type":"SaveTool"},{"attributes":{"source":{"id":"1316"}},"id":"1320","type":"CDSView"},{"attributes":{},"id":"1290","type":"LinearScale"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"x":{"field":"x"}},"id":"1318","type":"VBar"},{"attributes":{"axis":{"id":"1298"},"dimension":1,"ticker":null},"id":"1301","type":"Grid"},{"attributes":{},"id":"1327","type":"AllLabels"},{"attributes":{"data_source":{"id":"1316"},"glyph":{"id":"1317"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"1318"},"view":{"id":"1320"}},"id":"1319","type":"GlyphRenderer"},{"attributes":{},"id":"1329","type":"Selection"},{"attributes":{"overlay":{"id":"1308"}},"id":"1304","type":"BoxZoomTool"},{"attributes":{},"id":"1325","type":"BasicTickFormatter"},{"attributes":{},"id":"1330","type":"UnionRenderers"},{"attributes":{},"id":"1288","type":"DataRange1d"},{"attributes":{"active_multi":null,"tools":[{"id":"1302"},{"id":"1303"},{"id":"1304"},{"id":"1305"},{"id":"1306"},{"id":"1307"}]},"id":"1309","type":"Toolbar"},{"attributes":{"text":"Vertical Bars Countries pop"},"id":"1284","type":"Title"},{"attributes":{"bottom_units":"screen","fill_alpha":0.5,"fill_color":"lightgrey","left_units":"screen","level":"overlay","line_alpha":1.0,"line_color":"black","line_dash":[4,4],"line_width":2,"right_units":"screen","syncable":false,"top_units":"screen"},"id":"1308","type":"BoxAnnotation"},{"attributes":{},"id":"1306","type":"ResetTool"},{"attributes":{},"id":"1299","type":"BasicTicker"},{"attributes":{},"id":"1295","type":"BasicTicker"},{"attributes":{},"id":"1307","type":"HelpTool"},{"attributes":{"formatter":{"id":"1325"},"major_label_policy":{"id":"1327"},"ticker":{"id":"1299"}},"id":"1298","type":"LinearAxis"},{"attributes":{},"id":"1324","type":"AllLabels"},{"attributes":{"fill_color":{"value":"#1f77b4"},"line_color":{"value":"#1f77b4"},"x":{"field":"x"}},"id":"1317","type":"VBar"},{"attributes":{"below":[{"id":"1294"}],"center":[{"id":"1297"},{"id":"1301"}],"left":[{"id":"1298"}],"renderers":[{"id":"1319"}],"title":{"id":"1284"},"toolbar":{"id":"1309"},"x_range":{"id":"1286"},"x_scale":{"id":"1290"},"y_range":{"id":"1288"},"y_scale":{"id":"1292"}},"id":"1283","subtype":"Figure","type":"Plot"},{"attributes":{},"id":"1286","type":"DataRange1d"},{"attributes":{"formatter":{"id":"1322"},"major_label_policy":{"id":"1324"},"ticker":{"id":"1295"}},"id":"1294","type":"LinearAxis"},{"attributes":{"data":{"x":["Country_English","Country_German","Country_Local","ISO_3166-1_alpha2","ISO_3166-1_alpha3","Continent","Capital","Population","Area","Coastline","Government_form","Currency","Currency_code","Dialing_prefix","Birthrate","Deathrate","Life_expectancy","Url"]},"selected":{"id":"1329"},"selection_policy":{"id":"1330"}},"id":"1316","type":"ColumnDataSource"},{"attributes":{},"id":"1322","type":"BasicTickFormatter"},{"attributes":{},"id":"1292","type":"LinearScale"},{"attributes":{},"id":"1303","type":"WheelZoomTool"},{"attributes":{"axis":{"id":"1294"},"ticker":null},"id":"1297","type":"Grid"}],"root_ids":["1283"]},"title":"Bokeh Application","version":"2.3.2"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  var docs_json = document.getElementById('1421').textContent;
+                  var render_items = [{"docid":"993969cb-c7e6-470a-ad75-99f1153049dc","root_ids":["1283"],"roots":{"1283":"08157524-f13c-4f82-a89d-47c2ff4df599"}}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    var attempts = 0;
+                    var timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        clearInterval(timer);
+                        embed_document(root);
+                      } else {
+                        attempts++;
+                        if (attempts > 100) {
+                          clearInterval(timer);
+                          console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                        }
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+    
+  </body>
+  
+</html>
